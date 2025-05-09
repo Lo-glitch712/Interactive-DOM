@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive DOM Traversal</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+<header>
+  <h2>Student Profile</h2>
+  <p><strong>Complete Name:</strong> Lon Adlehcir Monserate</p>
+  <p><strong>Sex:</strong> Male</p>
+  <p><strong>Address:</strong> San Rafael, Lagonoy, Camarines Sur</p>
+  <p><strong>Course, Year, and Section:</strong> BSIT 2B</p>
+  <p><strong>Name of School:</strong> Partido State University</p>
+  <p><strong>Semester and Academic Year:</strong> 2nd Sem, AY 2024–2025</p>
+  <p><strong>Subject Code and Title:</strong> PF2 - Event-Driven Programming</p>
+  <p><strong>Name of Subject Instructor:</strong> Sir Arjay Abio</p>
+</header>
+
+<h2>DOM Traversal Interactive</h2>
+<div id="grandparent" class="node grandparent">Grandparent
+  <div class="node parent">Parent 1
+    <div class="node child">Child 1</div>
+    <div class="node child">Child 2</div>
+  </div>
+  <div class="node parent">Parent 2
+    <div class="node child">Child 3</div>
+    <div class="node child">Child 4</div>
+  </div>
+</div>
+
+<div class="controls">
+  <button onclick="traverseUp()">Traverse Up</button>
+  <button onclick="traverseDown()">Traverse Down</button>
+  <button onclick="traversePrev()">Previous Sibling</button>
+  <button onclick="traverseNext()">Next Sibling</button>
+  <button onclick="addChild()">Add Child</button>
+  <button onclick="deleteNode()">Delete Current</button>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

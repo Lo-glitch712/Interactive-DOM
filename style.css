@@ -1,0 +1,84 @@
+:root {
+  --primary-color: #1f1f1f;
+  --hover-color: #f8f0ac;
+  --section-bg: #FFFFFF;
+  --border-color: #20B2AA;
+  --text-color: black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: var(--section-bg);
+  color: var(--text-color);
+}
+
+header {
+  background-color: #f0f0f0;
+  border-left: 10px solid var(--primary-color);
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+header h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+header p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.node {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #030303;
+  outline: 0.5px solid #222;
+}
+
+.grandparent {
+  background-color: rgb(245, 245, 155);
+  color: black;
+  font-weight: bold;
+}
+
+.parent {
+  background-color: skyblue;
+  margin-left: 20px;
+  margin: 20px;
+  color: black;
+}
+
+.child {
+  background-color: #ffcccb; /* light red */
+  margin-left: 40px;
+  margin: 10px;
+}
+
+.highlight {
+  outline: 3px solid #222;
+  box-shadow: 0 0 10px #222;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
